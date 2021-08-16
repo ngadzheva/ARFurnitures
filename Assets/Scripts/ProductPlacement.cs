@@ -38,6 +38,7 @@ public class ProductPlacement : MonoBehaviour
             return PlaneManager.TrackingStatusIsTrackedOrLimited && PlaneManager.GroundPlaneHitReceived;
         }
     }
+
     void Start()
     {
         this.mainCamera = Camera.main;
@@ -57,6 +58,8 @@ public class ProductPlacement : MonoBehaviour
                         this.augmentationScale);
 
         this.product.transform.localScale = this.productScale;
+
+        Reset();
     }
 
 
@@ -108,6 +111,8 @@ public class ProductPlacement : MonoBehaviour
         this.product.transform.position = Vector3.zero;
         this.product.transform.localEulerAngles = Vector3.zero;
         this.product.transform.localScale = this.productScale;
+
+        this.IsPlaced = false;
     }
 
     public void PlaceProductAtAnchor(Transform anchor)
