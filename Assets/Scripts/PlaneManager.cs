@@ -47,7 +47,7 @@ public class PlaneManager : MonoBehaviour
     {
         get
         {
-            return TrackingStatusIsTrackedOrLimited && GroundPlaneHitReceived && Input.touchCount == 0;
+            return TrackingStatusIsTrackedOrLimited && Input.touchCount == 0; // && GroundPlaneHitReceived
         }
     }
 
@@ -87,9 +87,9 @@ public class PlaneManager : MonoBehaviour
 
     void LateUpdate()
     {
-        GroundPlaneHitReceived = (this.automaticHitTestFrameCount == Time.frameCount);
+        // GroundPlaneHitReceived = (this.automaticHitTestFrameCount == Time.frameCount);
 
-        SetSurfaceIndicatorVisible(SurfaceIndicatorVisibilityConditionsMet);
+        // SetSurfaceIndicatorVisible(SurfaceIndicatorVisibilityConditionsMet);
     }
 
     void OnDestroy()
@@ -99,16 +99,16 @@ public class PlaneManager : MonoBehaviour
         DeviceTrackerARController.Instance.UnregisterDevicePoseStatusChangedCallback(OnDevicePoseStatusChanged);
     }
 
-    public void HandleAutomaticHitTest(HitTestResult result)
-    {
-        this.automaticHitTestFrameCount = Time.frameCount;
+    // public void HandleAutomaticHitTest(HitTestResult result)
+    // {
+    //     this.automaticHitTestFrameCount = Time.frameCount;
 
-        if (!productPlacement.IsPlaced)
-        {
-            this.productPlacement.DetachProductFromAnchor();
-            this.placementAugmentation.PositionAt(result.Position);
-        }
-    }
+    //     if (!productPlacement.IsPlaced)
+    //     {
+    //         this.productPlacement.DetachProductFromAnchor();
+    //         this.placementAugmentation.PositionAt(result.Position);
+    //     }
+    // }
     
     public void HandleInteractiveHitTest(HitTestResult result)
     {
@@ -136,6 +136,20 @@ public class PlaneManager : MonoBehaviour
                 this.productPlacement.PlaceProductAtAnchor(this.placementAnchor.transform);
             }
         }
+    
+        // this.contentPositioningBehaviour.AnchorStage = this.placementAnchor;
+        // this.contentPositioningBehaviour.PositionContentAtPlaneAnchor(result);
+        // UtilityHelper.EnableRendererColliderCanvas(placementAugmentation, true);
+        
+        // if (!this.productPlacement.IsPlaced)
+        // {
+        //     this.productPlacement.PlaceProductAtAnchorFacingCamera(this.placementAnchor.transform);
+        //     this.touchHandler.enableRotation = true;
+        // }
+        // else
+        // {
+        //     this.productPlacement.PlaceProductAtAnchor(this.placementAnchor.transform);
+        // }
     }
 
     public void ResetScene()
@@ -161,6 +175,9 @@ public class PlaneManager : MonoBehaviour
     {
         Renderer[] renderers = this.planeFinder.PlaneIndicator.GetComponentsInChildren<Renderer>(true);
         Canvas[] canvas = this.planeFinder.PlaneIndicator.GetComponentsInChildren<Canvas>(true);
+
+        Transform transform = this.planeFinder.PlaneIndicator.GetComponent<Transform>();
+        Debug.Log("Point x coordinate: " + transform.position.x);
 
         foreach (Canvas c in canvas)
             c.enabled = isVisible;

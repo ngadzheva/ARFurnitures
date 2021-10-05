@@ -65,6 +65,8 @@ public class ProductPlacement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("ProductPlacement Update");
+
         EnablePreviewModeTransparency(!this.IsPlaced);
 
         if (this.IsPlaced)
@@ -100,6 +102,7 @@ public class ProductPlacement : MonoBehaviour
 
     void LateUpdate()
     {
+        Debug.Log("LateProductUpdate");
         if (!this.IsPlaced)
         {
             SetVisible(this.productVisibilityConditionsMet);
@@ -113,6 +116,8 @@ public class ProductPlacement : MonoBehaviour
         this.product.transform.localScale = this.productScale;
 
         this.IsPlaced = false;
+
+        // EnablePreviewModeTransparency(!this.IsPlaced);
     }
 
     public void PlaceProductAtAnchor(Transform anchor)
@@ -120,6 +125,8 @@ public class ProductPlacement : MonoBehaviour
         this.product.transform.SetParent(anchor, true);
         this.product.transform.localPosition = Vector3.zero;
         this.IsPlaced = true;
+
+        // EnablePreviewModeTransparency(!this.IsPlaced);
     }
 
     public void PlaceProductAtAnchorFacingCamera(Transform anchor)
@@ -133,6 +140,8 @@ public class ProductPlacement : MonoBehaviour
     {
         this.product.transform.SetParent(null);
         this.IsPlaced = false;
+
+        // EnablePreviewModeTransparency(!this.IsPlaced);
     }
 
     void SetupMaterials()

@@ -3,19 +3,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Vuforia;
+using UnityEngine.XR.ARFoundation;
 
 public class GroundPlaneUI : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] Text instructions = null;
     [SerializeField] CanvasGroup screenReticle = null;
-
+    [SerializeField] Text area = null;
+    [SerializeField] GameObject product = null;
+ 
     GraphicRaycaster graphicRayCaster;
     PointerEventData pointerEventData;
     EventSystem eventSystem;
 
     ProductPlacement productPlacement;
     TouchHandler touchHandler;
+
+    PlaneAreaBehaviour planeAreaBehaviour;
 
     void Start()
     {
@@ -29,31 +34,51 @@ public class GroundPlaneUI : MonoBehaviour
 
     void LateUpdate()
     {
-        if (PlaneManager.GroundPlaneHitReceived && PlaneManager.TrackingStatusIsTrackedAndNormal)
+        this.area.transform.parent.gameObject.SetActive(true);
+        this.area.enabled = true;
+        this.area.text = product.GetComponent<Collider>().bounds.size.x.ToString();
+
+        if (PlaneManager.TrackingStatusIsTrackedAndNormal) // && PlaneManager.GroundPlaneHitReceived
         {
             this.screenReticle.alpha = 0;
 
             this.instructions.transform.parent.gameObject.SetActive(true);
             this.instructions.enabled = true;
 
-             this.instructions.text = (this.productPlacement.IsPlaced) ?
-                "Touch and drag to move the product.\nTwo fingers to rotate" +
-                ((this.touchHandler.enablePinchScaling) ? " or pinch to scale." : ".")
-                :
-                "Tap to place the product.";
+            if (this.productPlacement.IsPlaced)
+            {
+                Vector3 productSize = product.GetComponent<Collider>().bounds.size;
+
+                if (productSize.x > planeAreaBehaviour.planeWidth || productSize.y > planeAreaBehaviour.planeHeight)
+                {
+                    this.instructions.text = "There is not enough space for the product";
+                }
+                else
+                {
+                    this.instructions.text = "Touch and drag to move the product.\nTwo fingers to rotate" +
+                    ((this.touchHandler.enablePinchScaling) ? " or pinch to scale." : ".");
+                }
+            }
+            else
+            {
+                this.instructions.text = "Tap to place the product.";
+            }
         }
         else
         {
-            if (!PlaneManager.GroundPlaneHitReceived)
-            {
-                this.screenReticle.alpha = 1;
-            }
+            // if (!PlaneManager.GroundPlaneHitReceived)
+            // {
+            //     this.screenReticle.alpha = 1;
+            // }
+
+            // this.screenReticle.alpha = 1;
 
             this.instructions.transform.parent.gameObject.SetActive(true);
             this.instructions.enabled = true;
+            this.instructions.text = "Point device towards ground";
 
-            this.instructions.text = PlaneManager.GroundPlaneHitReceived ?
-                "Move to get better tracking for placing an anchor" : "Point device towards ground";
+            // this.instructions.text = PlaneManager.GroundPlaneHitReceived ?
+            //     "Move to get better tracking for placing an anchor" : "Point device towards ground";
         }
     }
 

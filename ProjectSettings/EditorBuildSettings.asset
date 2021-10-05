@@ -8,9 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ARFurnitures.unity
     guid: 3151807591542436f9ddfbf021a1545d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AROcclusion.unity
     guid: 37cee62935d07af468923cac38315883
+  - enabled: 0
+    path: Assets/Scenes/ARArea.unity
+    guid: 8a5413a69c6b8f74ab9c0eeb8125fbd6
+  - enabled: 0
+    path: Assets/Scenes/VuforiaWithARDoundation.unity
+    guid: 4483d7ecc5faca143af17fecfba6dde3
+  - enabled: 1
+    path: Assets/Scenes/ARFurnitures 1.unity
+    guid: 4d7888452fb768143b69502b089e1d3d
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 27eb75e16bf4c0a44a45719df1e4c06e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2cbecc7a8693dea4cbd8e3e9d9fb2e45, type: 2}
