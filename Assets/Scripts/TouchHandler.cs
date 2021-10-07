@@ -89,4 +89,9 @@ public class TouchHandler : MonoBehaviour
             Input.GetTouch(0).fingerId == 0 &&
             lastTouchCount == 0);
     }
+
+    public void LoadAugmentationObject(GameObject product)
+    {
+        this.augmentationObject = product.transform;
+    }
 }

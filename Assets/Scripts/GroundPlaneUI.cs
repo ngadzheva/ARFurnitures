@@ -1,18 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using Vuforia;
 using UnityEngine.XR.ARFoundation;
+using Vuforia;
 
 public class GroundPlaneUI : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] Text instructions = null;
     [SerializeField] CanvasGroup screenReticle = null;
-    [SerializeField] Text area = null;
     [SerializeField] GameObject product = null;
- 
     GraphicRaycaster graphicRayCaster;
     PointerEventData pointerEventData;
     EventSystem eventSystem;
@@ -20,25 +19,26 @@ public class GroundPlaneUI : MonoBehaviour
     ProductPlacement productPlacement;
     TouchHandler touchHandler;
 
-    PlaneAreaBehaviour planeAreaBehaviour;
+    PlaneAreaManager planeAreaManager;
+
+    ARPlaneManager planeManager;
 
     void Start()
     {
+        
         this.productPlacement = FindObjectOfType<ProductPlacement>();
         this.touchHandler = FindObjectOfType<TouchHandler>();
         this.graphicRayCaster = FindObjectOfType<GraphicRaycaster>();
         this.eventSystem = FindObjectOfType<EventSystem>();
+        this.planeManager = FindObjectOfType<ARPlaneManager>();
+        this.planeAreaManager = FindObjectOfType<PlaneManager>().GetComponent<PlaneAreaManager>();
 
         DeviceTrackerARController.Instance.RegisterDevicePoseStatusChangedCallback(OnDevicePoseStatusChanged);
     }
 
     void LateUpdate()
     {
-        this.area.transform.parent.gameObject.SetActive(true);
-        this.area.enabled = true;
-        this.area.text = product.GetComponent<Collider>().bounds.size.x.ToString();
-
-        if (PlaneManager.TrackingStatusIsTrackedAndNormal) // && PlaneManager.GroundPlaneHitReceived
+        if (PlaneManager.TrackingStatusIsTrackedAndNormal)
         {
             this.screenReticle.alpha = 0;
 
@@ -47,9 +47,9 @@ public class GroundPlaneUI : MonoBehaviour
 
             if (this.productPlacement.IsPlaced)
             {
-                Vector3 productSize = product.GetComponent<Collider>().bounds.size;
+                Vector3 productSize = this.product.GetComponent<MeshCollider>().bounds.size;
 
-                if (productSize.x > planeAreaBehaviour.planeWidth || productSize.y > planeAreaBehaviour.planeHeight)
+                if (productSize.x > planeAreaManager.planeWidth || productSize.y > planeAreaManager.planeHeight)
                 {
                     this.instructions.text = "There is not enough space for the product";
                 }
@@ -66,19 +66,9 @@ public class GroundPlaneUI : MonoBehaviour
         }
         else
         {
-            // if (!PlaneManager.GroundPlaneHitReceived)
-            // {
-            //     this.screenReticle.alpha = 1;
-            // }
-
-            // this.screenReticle.alpha = 1;
-
             this.instructions.transform.parent.gameObject.SetActive(true);
             this.instructions.enabled = true;
-            this.instructions.text = "Point device towards ground";
-
-            // this.instructions.text = PlaneManager.GroundPlaneHitReceived ?
-            //     "Move to get better tracking for placing an anchor" : "Point device towards ground";
+            this.instructions.text = "Point device towards ground.";
         }
     }
 

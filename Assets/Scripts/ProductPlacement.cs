@@ -8,6 +8,7 @@ public class ProductPlacement : MonoBehaviour
     [Header("Augmentation Objects")]
     [SerializeField] GameObject product = null;
     [SerializeField] GameObject productShadow = null;
+    [SerializeField] string productName = null;
 
     [Header("Control Indicators")]
     [SerializeField] GameObject translationIndicator = null;
@@ -43,21 +44,8 @@ public class ProductPlacement : MonoBehaviour
     {
         this.mainCamera = Camera.main;
         this.groundPlaneUI = FindObjectOfType<GroundPlaneUI>();
-        this.productRenderer = this.product.GetComponent<MeshRenderer>();
-        this.productShadowRenderer = this.productShadow.GetComponent<MeshRenderer>();
-
-        SetupMaterials();
-        SetupFloor();
-
-
-        this.augmentationScale = VuforiaRuntimeUtilities.IsPlayMode() ? 0.1f : this.productSize;
-
-        this.productScale =
-            new Vector3(this.augmentationScale,
-                        this.augmentationScale,
-                        this.augmentationScale);
-
-        this.product.transform.localScale = this.productScale;
+        
+        SetupProduct();
 
         Reset();
     }
@@ -65,10 +53,6 @@ public class ProductPlacement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("ProductPlacement Update");
-
-        EnablePreviewModeTransparency(!this.IsPlaced);
-
         if (this.IsPlaced)
         {
             this.rotationIndicator.SetActive(Input.touchCount == 2);
@@ -117,7 +101,21 @@ public class ProductPlacement : MonoBehaviour
 
         this.IsPlaced = false;
 
-        // EnablePreviewModeTransparency(!this.IsPlaced);
+        EnablePreviewModeTransparency(!this.IsPlaced);
+    }
+
+    public void LoadProduct(GameObject productObject, string name)
+    {
+        this.product = productObject;
+        this.productShadow = GameObject.Find($"{name}Shadow");
+        this.productName = name;
+
+        SetupProduct();
+    }
+
+    public GameObject GetProduct()
+    {
+        return this.product;
     }
 
     public void PlaceProductAtAnchor(Transform anchor)
@@ -126,7 +124,7 @@ public class ProductPlacement : MonoBehaviour
         this.product.transform.localPosition = Vector3.zero;
         this.IsPlaced = true;
 
-        // EnablePreviewModeTransparency(!this.IsPlaced);
+        EnablePreviewModeTransparency(!this.IsPlaced);
     }
 
     public void PlaceProductAtAnchorFacingCamera(Transform anchor)
@@ -141,25 +139,44 @@ public class ProductPlacement : MonoBehaviour
         this.product.transform.SetParent(null);
         this.IsPlaced = false;
 
-        // EnablePreviewModeTransparency(!this.IsPlaced);
+        EnablePreviewModeTransparency(!this.IsPlaced);
+    }
+
+    void SetupProduct()
+    {
+        this.productRenderer = this.product.GetComponent<MeshRenderer>();
+        this.productShadowRenderer = this.productShadow.GetComponent<MeshRenderer>();
+
+        SetupMaterials();
+        SetupFloor();
+
+
+        this.augmentationScale = VuforiaRuntimeUtilities.IsPlayMode() ? 0.1f : this.productSize;
+
+        this.productScale =
+            new Vector3(this.augmentationScale,
+                        this.augmentationScale,
+                        this.augmentationScale);
+
+        this.product.transform.localScale = this.productScale;
     }
 
     void SetupMaterials()
     {
         this.productMaterials = new Material[]
         {
-            Resources.Load<Material>("ChairBody"),
-            Resources.Load<Material>("ChairFrame")
+            Resources.Load<Material>($"{this.productName}Body"),
+            Resources.Load<Material>($"{this.productName}Frame")
         };
 
         this.productMaterialsTransparent = new Material[]
         {
-            Resources.Load<Material>("ChairBodyTransparent"),
-            Resources.Load<Material>("ChairFrameTransparent")
+            Resources.Load<Material>($"{this.productName}BodyTransparent"),
+            Resources.Load<Material>($"{this.productName}FrameTransparent")
         };
 
-        this.productShadowMaterial = Resources.Load<Material>("ChairShadow");
-        this.productShadowMaterialTransparent = Resources.Load<Material>("ChairShadowTransparent");
+        this.productShadowMaterial = Resources.Load<Material>($"{this.productName}Shadow");
+        this.productShadowMaterialTransparent = Resources.Load<Material>($"{this.productName}ShadowTransparent");
     }
 
     void SetupFloor()

@@ -3,7 +3,232 @@ guid: 1ae65e9927bb40144882b9de873672e3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BoxMat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box_1Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box_2Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_LayerMat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_10Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_11Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_12_&_Buffer_Layer_13Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_14Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_15Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_16Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_17Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_18Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_19Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_1Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_20Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_21Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_22Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_23Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_24Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_25Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_26Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_27Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_28Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_29Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_2Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_30Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_31Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_32Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_33Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_34_&_Buffer_Layer_37_&_Buffer_Layer_38_&_Buffer_Layer_39_&_Buffer_Layer_40_&_Buffer_Layer_42_&_Buffer_Layer_41Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_35Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_36Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_3Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_4Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_5Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_6Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_7Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_8Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffer_Layer_9Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Image_PlaneMat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Image_Plane_1Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Image_Plane_2Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Image_Plane_3Mat
+    second: {fileID: 2100000, guid: 722b5cf0133de0540a31794f9c2eca3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Image_Plane_4Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Image_Plane_5Mat
+    second: {fileID: 2100000, guid: 87fdf35407f6e944eb80a0ad0f53659a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
