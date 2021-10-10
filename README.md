@@ -3,6 +3,7 @@ Master degree thesis @fmi
 
 ## Technologies
 - Vuforia
+- ARFoundation
 - Unity
 - C#
 
@@ -13,4 +14,4 @@ Master degree thesis @fmi
 - [x] Scale a 3D model in the AR scene
 - [ ] Measure distances in the AR scene
 - [ ] Determine whether a 3D model will fit a placement in the AR scene
-- [ ] Occlude 3D models
+- [x] Occlude 3D models
