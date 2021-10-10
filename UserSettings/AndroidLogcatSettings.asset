@@ -1,0 +1,287 @@
+{
+    "m_SelectedDeviceId": "0B101JEC209450",
+    "m_SelectedPackage": {
+        "deviceId": "0B101JEC209450",
+        "name": "com.DefaultCompany.ARFurnitures",
+        "processId": 14017,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.google.android.apps.nexuslauncher",
+            "processId": 27335,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 8843,
+            "exited": true
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 9685,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 10444,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 11023,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 18483,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 19033,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 19947,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 20614,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 21182,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 21735,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 22504,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 23272,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 23881,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 24519,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 25206,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 25788,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 26349,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 27246,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 28003,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 28536,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 29083,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 31281,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 31849,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 32448,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 1069,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 2379,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 3098,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 7934,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 8916,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 9437,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 9974,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 10530,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 11044,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 11592,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 12423,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 14017,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "Width",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}

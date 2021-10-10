@@ -1,0 +1,990 @@
+; FBX 7.3.0 project file
+; ----------------------------------------------------
+
+FBXHeaderExtension: {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7300
+	CreationTimeStamp: {
+		Version: 1000
+		Year: 2021
+		Month: 9
+		Day: 8
+		Hour: 12
+		Minute: 17
+		Second: 8
+		Millisecond: 445
+	}
+	Creator: "Vectary"
+	SceneInfo: {
+		Type: "UserData"
+		Version: 100
+		MetaData: {
+			Version: 100
+			Title: "Bedroom"
+			Subject: ""
+			Author: "heartbeat"
+			Keywords: ""
+			Revision: ""
+			Comment: ""
+		}
+	}
+}
+GlobalSettings: {
+	Version: 1000
+	Properties70: {
+		P: "UpAxis", "int", "Integer", "", 2
+		P: "UpAxisSign", "int", "Integer", "", 1
+		P: "FrontAxis", "int", "Integer", "", 1
+		P: "FrontAxisSign", "int", "Integer", "", -1
+		P: "CoordAxis", "int", "Integer", "", 0
+		P: "CoordAxisSign", "int", "Integer", "", 1
+		P: "OriginalUpAxis", "int", "Integer", "", 1
+		P: "OriginalUpAxisSign", "int", "Integer", "", 1
+		P: "UnitScaleFactor", "double", "Number", "", 0.1
+		P: "OriginalUnitScaleFactor", "double", "Number", "", 1
+	}
+}
+
+; Documents Description
+; ----------------------------------------------------
+
+Documents: {
+	Count: 1
+	Document: 1000042, undefined {
+		RootNode: 0
+	}
+}
+
+; Object definitions
+; ----------------------------------------------------
+
+Definitions: {
+	Version: 100
+	Count: 43
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 14
+	}
+	ObjectType: "Geometry" {
+		Count: 14
+	}
+	ObjectType: "Material" {
+		Count: 14
+	}
+	ObjectType: "Texture" {
+		Count: 0
+	}
+	ObjectType: "Video" {
+		Count: 0
+	}
+}
+
+; Object properties
+; ----------------------------------------------------
+
+Objects: {
+	Model: 1000000, "Model::Buffer Layer 16", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", -3.9642392096470473,-1.8008596095081657,-66.58409355194337
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 0.9666666666666667,1,1.3499999999999999
+		}
+	}
+	Geometry: 1000001, "Geometry::Buffer Layer 16", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: -160.25364685058594,88.21343994140625,50,-100.25364685058594,88.21343994140625,50,-100.25364685058594,53.21343994140625,50,-160.25364685058594,53.21343994140625,50,-100.25364685058594,88.21343994140625,70,-160.25364685058594,88.21343994140625,70,-160.25364685058594,53.21343994140625,70,-100.25364685058594,53.21343994140625,70
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,6,5,0,-4,4,1,0,-6,2,7,6,-4,4,7,2,-2
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000002, "Material::Buffer Layer material 16", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000003, "Model::Buffer Layer 17", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 256.035760790353,-1.8008596095081657,-15.927762765722376
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 0.9666666666666667,1,0.9
+		}
+	}
+	Geometry: 1000004, "Geometry::Buffer Layer 17", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: -160.25364685058594,88.21343994140625,50,-100.25364685058594,88.21343994140625,50,-100.25364685058594,53.21343994140625,50,-160.25364685058594,53.21343994140625,50,-100.25364685058594,88.21343994140625,70,-160.25364685058594,88.21343994140625,70,-160.25364685058594,53.21343994140625,70,-100.25364685058594,53.21343994140625,70
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,6,5,0,-4,4,1,0,-6,2,7,6,-4,4,7,2,-2
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000005, "Material::Buffer Layer material 17", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000006, "Model::Buffer Layer 18", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 256.0357607903529,-1.8008596095081657,-66.58409355194337
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 0.9666666666666667,1,1.3499999999999999
+		}
+	}
+	Geometry: 1000007, "Geometry::Buffer Layer 18", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: -160.25364685058594,88.21343994140625,50,-100.25364685058594,88.21343994140625,50,-100.25364685058594,53.21343994140625,50,-160.25364685058594,53.21343994140625,50,-100.25364685058594,88.21343994140625,70,-160.25364685058594,88.21343994140625,70,-160.25364685058594,53.21343994140625,70,-100.25364685058594,53.21343994140625,70
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,6,5,0,-4,4,1,0,-6,2,7,6,-4,4,7,2,-2
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000008, "Material::Buffer Layer material 18", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000009, "Model::Buffer Layer 19", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 300,-50,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 1,1,1
+		}
+	}
+	Geometry: 1000010, "Geometry::Buffer Layer 19", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: -140.25364685058594,143.21343994140625,0,-140.25364685058594,103.21343994140625,0,-200.25364685058594,103.21343994140625,0,-200.25364685058594,143.21343994140625,0,-200.25364685058594,143.21343994140625,50,-200.25364685058594,103.21343994140625,50,-140.25364685058594,103.21343994140625,50,-140.25364685058594,143.21343994140625,50
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,4,3,2,-6,0,3,4,-8,6,5,2,-2,6,1,0,-8
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000011, "Material::Buffer Layer material 19", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 1,1,1
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000012, "Model::Buffer Layer 15", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", -3.9642392096470473,-1.8008596095081657,-15.927762765722376
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 0.9666666666666667,1,0.9
+		}
+	}
+	Geometry: 1000013, "Geometry::Buffer Layer 15", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: -160.25364685058594,88.21343994140625,50,-100.25364685058594,88.21343994140625,50,-100.25364685058594,53.21343994140625,50,-160.25364685058594,53.21343994140625,50,-100.25364685058594,88.21343994140625,70,-160.25364685058594,88.21343994140625,70,-160.25364685058594,53.21343994140625,70,-100.25364685058594,53.21343994140625,70
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,6,5,0,-4,4,1,0,-6,2,7,6,-4,4,7,2,-2
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000014, "Material::Buffer Layer material 15", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000015, "Model::Buffer Layer 14", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 40,-50,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 1,1,1
+		}
+	}
+	Geometry: 1000016, "Geometry::Buffer Layer 14", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: -140.25364685058594,143.21343994140625,0,-140.25364685058594,103.21343994140625,0,-200.25364685058594,103.21343994140625,0,-200.25364685058594,143.21343994140625,0,-200.25364685058594,143.21343994140625,50,-200.25364685058594,103.21343994140625,50,-140.25364685058594,103.21343994140625,50,-140.25364685058594,143.21343994140625,50
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,4,3,2,-6,0,3,4,-8,6,5,2,-2,6,1,0,-8
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000017, "Material::Buffer Layer material 14", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 1,1,1
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000018, "Model::Buffer Layer 13", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", -60,128.9341119546124,14.405422905012557
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 1,1,0.4
+		}
+	}
+	Geometry: 1000019, "Geometry::Buffer Layer 13", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: 90,-40.167755126953125,22.5,90,-40.167755126953125,17.5,90,-98.16775512695312,17.5,90,-98.16775512695312,22.5,150,-40.167755126953125,17.5,150,-40.167755126953125,22.5,150,-98.16775512695312,22.5,150,-98.16775512695312,17.5
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,6,5,0,-4,4,1,0,-6,2,7,6,-4,4,7,2,-2
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: -1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-2.61349051259999e-16,0,1,-2.61349051259999e-16,0,1,-2.61349051259999e-16,0,1,-2.61349051259999e-16,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,2.61349051259999e-16,0,-1,2.61349051259999e-16,0,-1,2.61349051259999e-16,0,-1,2.61349051259999e-16,0,-1
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000020, "Material::Buffer Layer material 13", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 1,1,1
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000021, "Model::Buffer Layer 12", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", -60,0,14.405422905012557
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 1,1,0.4
+		}
+	}
+	Geometry: 1000022, "Geometry::Buffer Layer 12", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: 90,-40.167755126953125,22.5,90,-40.167755126953125,17.5,90,-98.16775512695312,17.5,90,-98.16775512695312,22.5,150,-40.167755126953125,17.5,150,-40.167755126953125,22.5,150,-98.16775512695312,22.5,150,-98.16775512695312,17.5
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,6,5,0,-4,4,1,0,-6,2,7,6,-4,4,7,2,-2
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: -1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-2.61349051259999e-16,0,1,-2.61349051259999e-16,0,1,-2.61349051259999e-16,0,1,-2.61349051259999e-16,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,2.61349051259999e-16,0,-1,2.61349051259999e-16,0,-1,2.61349051259999e-16,0,-1,2.61349051259999e-16,0,-1
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000023, "Material::Buffer Layer material 12", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 1,1,1
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000024, "Model::Buffer Layer 6", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 9.592032815371567,-2.6006254789884036,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,-89.99999999999999
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 0.6215647448476723,1,1.2594855001731793
+		}
+	}
+	Geometry: 1000025, "Geometry::Buffer Layer 6", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *12 {
+			a: 54.65199279785156,-100,33.42045211791992,-57.966758728027344,-100,33.42045211791992,-57.966758728027344,-100,1.6615931987762451,54.65199279785156,-100,1.6615931987762451
+		}
+		PolygonVertexIndex: *4 {
+			a: 0,1,2,-4
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *12 {
+				a: 0,-1,0,0,-1,0,0,-1,0,0,-1,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000026, "Material::Buffer Layer material 6", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000027, "Model::Buffer Layer 4", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", -8.538111222610716,-2.6006254789884764,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,89.99999999999999
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 0.6215647448476723,1,1.2594855001731793
+		}
+	}
+	Geometry: 1000028, "Geometry::Buffer Layer 4", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *12 {
+			a: 54.65199279785156,-100,33.42045211791992,-57.966758728027344,-100,33.42045211791992,-57.966758728027344,-100,1.6615931987762451,54.65199279785156,-100,1.6615931987762451
+		}
+		PolygonVertexIndex: *4 {
+			a: 0,1,2,-4
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *12 {
+				a: 0,-1,0,0,-1,0,0,-1,0,0,-1,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000029, "Material::Buffer Layer material 4", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000030, "Model::Buffer Layer 3", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 1.4618887773892768,-2.6006254789884906,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 1.0655395625960096,1,1.2594855001731793
+		}
+	}
+	Geometry: 1000031, "Geometry::Buffer Layer 3", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *12 {
+			a: 54.65199279785156,-100,33.42045211791992,-57.966758728027344,-100,33.42045211791992,-57.966758728027344,-100,1.6615931987762451,54.65199279785156,-100,1.6615931987762451
+		}
+		PolygonVertexIndex: *4 {
+			a: 0,1,2,-4
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *12 {
+				a: 0,-1,0,0,-1,0,0,-1,0,0,-1,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000032, "Material::Buffer Layer material 3", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000033, "Model::Buffer Layer 2", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 1.6009704305578274e-14,181.45831298828125,-33.374918937683105
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,180
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 1,1,1.3541666666666667
+		}
+	}
+	Geometry: 1000034, "Geometry::Buffer Layer 2", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *9 {
+			a: -90,90,65.99977111816406,0.7574152946472168,91.45831298828125,113.99977111816406,90,90,65.99977111816406
+		}
+		PolygonVertexIndex: *3 {
+			a: 0,1,-3
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *9 {
+				a: 0,0.9998664855957031,-0.01634214259684086,0,0.9999260902404785,-0.012155878357589245,0,0.9998664855957031,-0.01634214259684086
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000035, "Material::Buffer Layer material 2", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 0.25098039215686274,0.2549019607843137,0.2784313725490196
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000036, "Model::Buffer Layer 1", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", -16.379631525313584,100,-60
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 1,1,1
+		}
+	}
+	Geometry: 1000037, "Geometry::Buffer Layer 1", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *24 {
+			a: -77.86295318603516,-3.5416903495788574,59.99977493286133,112.13704681396484,-3.5416903495788574,59.99977493286133,112.13704681396484,-8.541690826416016,59.99977493286133,-77.86295318603516,-8.541690826416016,59.99977493286133,112.13704681396484,-3.5416903495788574,179.99977111816406,-77.86295318603516,-3.5416903495788574,179.99977111816406,-77.86295318603516,-8.541690826416016,179.99977111816406,112.13704681396484,-8.541690826416016,179.99977111816406
+		}
+		PolygonVertexIndex: *24 {
+			a: 0,1,2,-4,4,5,6,-8,6,5,0,-4,4,1,0,-6,2,7,6,-4,4,7,2,-2
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *72 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000038, "Material::Buffer Layer material 1", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 1,1,1
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+	Model: 1000039, "Model::Buffer Layer & Buffer Layer 9 & Buffer Layer 5 & Buffer Layer 11 & Buffer Layer 7 & Buffer Layer 10 & Buffer Layer 8", "Mesh" {
+		Version: 232
+		Properties70: {
+			P: "InheritType", "enum", "", "", 1
+			P: "DefaultAttributeIndex", "int", "Integer", "", 0
+			P: "Lcl Translation", "Lcl Translation", "", "A", 0,-200,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A", 0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A", 0.9,1,0.9805844283192783
+		}
+	}
+	Geometry: 1000040, "Geometry::Buffer Layer & Buffer Layer 9 & Buffer Layer 5 & Buffer Layer 11 & Buffer Layer 7 & Buffer Layer 10 & Buffer Layer 8", "Mesh" {
+		GeometryVersion: 124
+		Vertices: *192 {
+			a: 100,290,0,100,100,0,-100,100,0,-100,290,0,100,100,61.18777084350586,-100,100,61.18777084350586,-100,271.7156066894531,3.3975937366485596,-100,108.84656524658203,3.3975937366485596,-100,161.953125,3.3975937366485596,-100,161.953125,22.773794174194336,-100,159.29779052734375,22.773794174194336,-100,161.953125,23.793594360351562,-100,234.04823303222656,10.39692497253418,-100,234.04823303222656,3.3975937366485596,-100,290,61.18777084350586,100,290,61.18777084350586,100,114.949462890625,5.098999977111816,100,101.83224487304688,5.098999977111816,100,101.83224487304688,40.79199981689453,100,159.83224487304688,40.79199981689453,100,159.83224487304688,20.407726287841797,100,232.73458862304688,45.273433685302734,-100,101.95159912109375,22.773794174194336,-100,101.95159912109375,3.3975937366485596,-100,101.95159912109375,23.793594360351562,-55.55555725097656,161.953125,3.3975937366485596,-55.55555725097656,101.95159912109375,3.3975937366485596,-55.55555725097656,161.953125,22.773794174194336,-55.55555725097656,101.95159912109375,22.773794174194336,-100,234.04823303222656,22.773794174194336,-100,234.04823303222656,24.735097885131836,-100,238.4847869873047,22.773794174194336,100,232.73458862304688,5.098999977111816,100,159.83224487304688,5.098999977111816,74.47945404052734,159.83224487304688,5.098999977111816,74.47945404052734,101.83224487304688,5.098999977111816,74.47945404052734,101.83224487304688,40.79199981689453,74.47945404052734,159.83224487304688,40.79199981689453,-100,282.31451416015625,3.3975937366485596,-100,288.04779052734375,3.3975937366485596,-100,288.04779052734375,22.773794174194336,-100,288.04779052734375,24.735097885131836,-55.55555725097656,101.95159912109375,23.793594360351562,-55.55555725097656,161.953125,23.793594360351562,100,288.7345886230469,5.098999977111816,74.47945404052734,288.7345886230469,5.098999977111816,74.47945404052734,232.73458862304688,5.098999977111816,68.76586151123047,232.73458862304688,34.8393669128418,-100,101.95159912109375,43.16979217529297,-55.55555725097656,101.95159912109375,43.16979217529297,-55.55555725097656,234.04823303222656,24.735097885131836,-55.55555725097656,288.04779052734375,24.735097885131836,-55.55555725097656,161.953125,43.16979217529297,-100,161.953125,43.16979217529297,-100,234.04823303222656,44.111297607421875,-55.55555725097656,234.04823303222656,44.111297607421875,-100,288.04779052734375,44.111297607421875,-55.55555725097656,288.04779052734375,44.111297607421875,100,288.7345886230469,45.273433685302734,68.76586151123047,288.7345886230469,34.8393669128418,-55.55555725097656,288.04779052734375,3.3975937366485596,-55.55555725097656,234.04823303222656,3.3975937366485596,-55.55555725097656,234.04823303222656,22.773794174194336,-55.55555725097656,288.04779052734375,22.773794174194336
+		}
+		PolygonVertexIndex: *238 {
+			a: 0,1,2,-4,4,5,2,-2,6,3,2,7,8,9,10,11,12,-14,0,3,14,-16,4,1,16,17,18,19,20,-22,14,5,4,-16,10,22,23,7,2,24,-12,25,8,7,23,-27,25,27,9,-9,9,27,28,22,-11,29,12,11,30,-32,16,1,32,21,20,-34,33,34,35,17,-17,35,36,18,-18,36,37,19,-19,19,37,34,33,-21,3,38,39,40,31,30,-42,28,26,23,-23,11,24,42,-44,26,28,27,-26,32,44,45,-47,21,32,46,-48,24,48,49,-43,34,37,36,-36,41,30,50,-52,52,43,42,-50,53,11,43,-53,30,54,55,-51,56,41,51,-58,58,21,47,-60,44,58,59,-46,47,46,45,-60,48,53,52,-50,57,51,50,-56,54,56,57,-56,60,39,38,6,13,-62,61,62,63,-61,29,62,61,13,-13,60,63,40,-40,40,63,62,29,-32,32,1,-1,5,24,-3,38,3,-7,3,41,-15,15,58,-1,0,44,-33,48,24,-6,15,4,-22,5,14,-54,54,30,-12,56,14,-42,15,21,-59,0,58,-45,5,53,-49,53,14,-12,14,54,-12,14,56,-55
+		}
+		LayerElementNormal: 0 {
+			Version: 100
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *714 {
+				a: 0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,-1,0,0,-1,0,0,-1,0,0,-1,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0.3168477416038513,0,-0.9484764337539673,0.3168477416038513,0,-0.9484764337539673,0.3168477416038513,0,-0.9484764337539673,0.3168477416038513,0,-0.9484764337539673,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0.9820414185523987,0,0.18866559863090515,0.9820414185523987,0,0.18866559863090515,0.9820414185523987,0,0.18866559863090515,0.9820414185523987,0,0.18866559863090515,0,0,-1,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement: {
+				Type: "LayerElementNormal"
+				TypedIdx: 0
+			}
+		}
+	}
+	Material: 1000041, "Material::Buffer Layer material", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70: {
+			P: "EmissiveColor", "Color", "", "A", 1,1,1
+			P: "EmissiveFactor", "Number", "", "A", 0
+			P: "DiffuseColor", "Color", "", "A", 1,1,1
+			P: "DiffuseFactor", "Number", "", "A", 0.96
+			P: "Opacity", "Number", "", "A", 1
+			P: "TransparentColor", "Color", "", "A", 1,1,1
+			P: "TransparencyFactor", "Number", "", "A", 0
+			P: "SpecularColor", "Number", "", "A", 1,1,1
+			P: "SpecularFactor", "Number", "", "A", 0.04
+			P: "ShininessExponent", "Number", "", "A", 244.79999999999998
+			P: "NormalFactor", "Number", "", "A", 1
+			P: "RoughnessFactor", "Number", "", "A", 0.2
+			P: "MetallicFactor", "Number", "", "A", 0
+		}
+	}
+}
+
+; Object connections
+; ----------------------------------------------------
+
+Connections: {
+
+	; Geometry::Buffer Layer 16, Model::Buffer Layer 16
+	C: "OO",1000001,1000000
+
+	; Material::Buffer Layer material 16, Model::Buffer Layer 16
+	C: "OO",1000002,1000000
+
+	; Model::Buffer Layer 16, Model::RootNode
+	C: "OO",1000000,0
+
+	; Geometry::Buffer Layer 17, Model::Buffer Layer 17
+	C: "OO",1000004,1000003
+
+	; Material::Buffer Layer material 17, Model::Buffer Layer 17
+	C: "OO",1000005,1000003
+
+	; Model::Buffer Layer 17, Model::RootNode
+	C: "OO",1000003,0
+
+	; Geometry::Buffer Layer 18, Model::Buffer Layer 18
+	C: "OO",1000007,1000006
+
+	; Material::Buffer Layer material 18, Model::Buffer Layer 18
+	C: "OO",1000008,1000006
+
+	; Model::Buffer Layer 18, Model::RootNode
+	C: "OO",1000006,0
+
+	; Geometry::Buffer Layer 19, Model::Buffer Layer 19
+	C: "OO",1000010,1000009
+
+	; Material::Buffer Layer material 19, Model::Buffer Layer 19
+	C: "OO",1000011,1000009
+
+	; Model::Buffer Layer 19, Model::RootNode
+	C: "OO",1000009,0
+
+	; Geometry::Buffer Layer 15, Model::Buffer Layer 15
+	C: "OO",1000013,1000012
+
+	; Material::Buffer Layer material 15, Model::Buffer Layer 15
+	C: "OO",1000014,1000012
+
+	; Model::Buffer Layer 15, Model::RootNode
+	C: "OO",1000012,0
+
+	; Geometry::Buffer Layer 14, Model::Buffer Layer 14
+	C: "OO",1000016,1000015
+
+	; Material::Buffer Layer material 14, Model::Buffer Layer 14
+	C: "OO",1000017,1000015
+
+	; Model::Buffer Layer 14, Model::RootNode
+	C: "OO",1000015,0
+
+	; Geometry::Buffer Layer 13, Model::Buffer Layer 13
+	C: "OO",1000019,1000018
+
+	; Material::Buffer Layer material 13, Model::Buffer Layer 13
+	C: "OO",1000020,1000018
+
+	; Model::Buffer Layer 13, Model::RootNode
+	C: "OO",1000018,0
+
+	; Geometry::Buffer Layer 12, Model::Buffer Layer 12
+	C: "OO",1000022,1000021
+
+	; Material::Buffer Layer material 12, Model::Buffer Layer 12
+	C: "OO",1000023,1000021
+
+	; Model::Buffer Layer 12, Model::RootNode
+	C: "OO",1000021,0
+
+	; Geometry::Buffer Layer 6, Model::Buffer Layer 6
+	C: "OO",1000025,1000024
+
+	; Material::Buffer Layer material 6, Model::Buffer Layer 6
+	C: "OO",1000026,1000024
+
+	; Model::Buffer Layer 6, Model::RootNode
+	C: "OO",1000024,0
+
+	; Geometry::Buffer Layer 4, Model::Buffer Layer 4
+	C: "OO",1000028,1000027
+
+	; Material::Buffer Layer material 4, Model::Buffer Layer 4
+	C: "OO",1000029,1000027
+
+	; Model::Buffer Layer 4, Model::RootNode
+	C: "OO",1000027,0
+
+	; Geometry::Buffer Layer 3, Model::Buffer Layer 3
+	C: "OO",1000031,1000030
+
+	; Material::Buffer Layer material 3, Model::Buffer Layer 3
+	C: "OO",1000032,1000030
+
+	; Model::Buffer Layer 3, Model::RootNode
+	C: "OO",1000030,0
+
+	; Geometry::Buffer Layer 2, Model::Buffer Layer 2
+	C: "OO",1000034,1000033
+
+	; Material::Buffer Layer material 2, Model::Buffer Layer 2
+	C: "OO",1000035,1000033
+
+	; Model::Buffer Layer 2, Model::RootNode
+	C: "OO",1000033,0
+
+	; Geometry::Buffer Layer 1, Model::Buffer Layer 1
+	C: "OO",1000037,1000036
+
+	; Material::Buffer Layer material 1, Model::Buffer Layer 1
+	C: "OO",1000038,1000036
+
+	; Model::Buffer Layer 1, Model::RootNode
+	C: "OO",1000036,0
+
+	; Geometry::Buffer Layer & Buffer Layer 9 & Buffer Layer 5 & Buffer Layer 11 & Buffer Layer 7 & Buffer Layer 10 & Buffer Layer 8, Model::Buffer Layer & Buffer Layer 9 & Buffer Layer 5 & Buffer Layer 11 & Buffer Layer 7 & Buffer Layer 10 & Buffer Layer 8
+	C: "OO",1000040,1000039
+
+	; Material::Buffer Layer material, Model::Buffer Layer & Buffer Layer 9 & Buffer Layer 5 & Buffer Layer 11 & Buffer Layer 7 & Buffer Layer 10 & Buffer Layer 8
+	C: "OO",1000041,1000039
+
+	; Model::Buffer Layer & Buffer Layer 9 & Buffer Layer 5 & Buffer Layer 11 & Buffer Layer 7 & Buffer Layer 10 & Buffer Layer 8, Model::RootNode
+	C: "OO",1000039,0
+}
