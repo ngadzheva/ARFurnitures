@@ -57,14 +57,9 @@ public class MenuManager : MonoBehaviour
 
     void ItemClicked(int itemIndex)
     {
-        productPlacement.GetProduct().SetActive(false);
-
-        Debug.Log("Current product --------------------------------------");
-        Debug.Log(productPlacement.GetProduct().name);
+        // productPlacement.GetProduct().SetActive(false);
         
-        GameObject product = GameObject.Find(allFurnitures[itemIndex].name);
-        Debug.Log("New product --------------------------------------");
-        Debug.Log(product.name);
+        // GameObject product = GameObject.Find(allFurnitures[itemIndex].name);
         // product.SetActive(true);
 
         // planeManager.LoadPlacementAugmentation(product);

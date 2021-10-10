@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "0B101JEC209450",
         "name": "com.DefaultCompany.ARFurnitures",
-        "processId": 14017,
+        "processId": 24785,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -229,6 +229,54 @@
             "name": "com.DefaultCompany.ARFurnitures",
             "processId": 14017,
             "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 15306,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 20168,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 21044,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 21608,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 22200,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 23164,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 24121,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 24785,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -281,7 +329,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "Width",
+    "m_Filter": "",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

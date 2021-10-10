@@ -20,25 +20,15 @@ public class ProductPlacement : MonoBehaviour
 
     MeshRenderer productRenderer;
     MeshRenderer productShadowRenderer;
-    Material[] productMaterials, productMaterialsTransparent;
-    Material productShadowMaterial, productShadowMaterialTransparent;
-
+    Material[] productMaterials;
+    Material productShadowMaterial;
     GroundPlaneUI groundPlaneUI;
     Camera mainCamera;
     Ray cameraToPlaneRay;
     RaycastHit cameraToPlaneHit;
-
     float augmentationScale;
     Vector3 productScale;
     string floorName;
-
-    bool productVisibilityConditionsMet
-    {
-        get
-        {
-            return PlaneManager.TrackingStatusIsTrackedOrLimited && PlaneManager.GroundPlaneHitReceived;
-        }
-    }
 
     void Start()
     {
@@ -60,7 +50,7 @@ public class ProductPlacement : MonoBehaviour
             this.translationIndicator.SetActive(
                 (TouchHandler.IsSingleFingerDragging || TouchHandler.IsSingleFingerStationary) && !this.groundPlaneUI.IsCanvasButtonPressed());
 
-            if (TouchHandler.IsSingleFingerDragging || (VuforiaRuntimeUtilities.IsPlayMode() && Input.GetMouseButton(0)))
+            if (TouchHandler.IsSingleFingerDragging)
             {
                 if (!this.groundPlaneUI.IsCanvasButtonPressed())
                 {
@@ -84,15 +74,6 @@ public class ProductPlacement : MonoBehaviour
         }
     }
 
-    void LateUpdate()
-    {
-        Debug.Log("LateProductUpdate");
-        if (!this.IsPlaced)
-        {
-            SetVisible(this.productVisibilityConditionsMet);
-        }
-    }
-
     public void Reset()
     {
         this.product.transform.position = Vector3.zero;
@@ -100,8 +81,6 @@ public class ProductPlacement : MonoBehaviour
         this.product.transform.localScale = this.productScale;
 
         this.IsPlaced = false;
-
-        EnablePreviewModeTransparency(!this.IsPlaced);
     }
 
     public void LoadProduct(GameObject productObject, string name)
@@ -123,8 +102,6 @@ public class ProductPlacement : MonoBehaviour
         this.product.transform.SetParent(anchor, true);
         this.product.transform.localPosition = Vector3.zero;
         this.IsPlaced = true;
-
-        EnablePreviewModeTransparency(!this.IsPlaced);
     }
 
     public void PlaceProductAtAnchorFacingCamera(Transform anchor)
@@ -138,8 +115,6 @@ public class ProductPlacement : MonoBehaviour
     {
         this.product.transform.SetParent(null);
         this.IsPlaced = false;
-
-        EnablePreviewModeTransparency(!this.IsPlaced);
     }
 
     void SetupProduct()
@@ -151,7 +126,7 @@ public class ProductPlacement : MonoBehaviour
         SetupFloor();
 
 
-        this.augmentationScale = VuforiaRuntimeUtilities.IsPlayMode() ? 0.1f : this.productSize;
+        this.augmentationScale = this.productSize;
 
         this.productScale =
             new Vector3(this.augmentationScale,
@@ -169,41 +144,21 @@ public class ProductPlacement : MonoBehaviour
             Resources.Load<Material>($"{this.productName}Frame")
         };
 
-        this.productMaterialsTransparent = new Material[]
-        {
-            Resources.Load<Material>($"{this.productName}BodyTransparent"),
-            Resources.Load<Material>($"{this.productName}FrameTransparent")
-        };
-
         this.productShadowMaterial = Resources.Load<Material>($"{this.productName}Shadow");
-        this.productShadowMaterialTransparent = Resources.Load<Material>($"{this.productName}ShadowTransparent");
     }
 
     void SetupFloor()
     {
-        if (VuforiaRuntimeUtilities.IsPlayMode())
-        {
-            this.floorName = "Emulator Ground Plane";
-        }
-        else
-        {
-            this.floorName = "Floor";
-            GameObject floor = new GameObject(this.floorName, typeof(BoxCollider));
-            floor.transform.SetParent(this.product.transform.parent);
-            floor.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
-            floor.transform.localScale = Vector3.one;
-            floor.GetComponent<BoxCollider>().size = new Vector3(100f, 0, 100f);
-        }
+        this.floorName = "Floor";
+        GameObject floor = new GameObject(this.floorName, typeof(BoxCollider));
+        floor.transform.SetParent(this.product.transform.parent);
+        floor.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
+        floor.transform.localScale = Vector3.one;
+        floor.GetComponent<BoxCollider>().size = new Vector3(100f, 0, 100f);
     }
 
     void SetVisible(bool visible)
     {
         this.productRenderer.enabled = this.productShadowRenderer.enabled = visible;
-    }
-
-    void EnablePreviewModeTransparency(bool previewEnabled)
-    {
-        this.productRenderer.materials = previewEnabled ? this.productMaterialsTransparent : this.productMaterials;
-        this.productShadowRenderer.material = previewEnabled ? this.productShadowMaterialTransparent : this.productShadowMaterial;
     }
 }

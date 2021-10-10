@@ -5,7 +5,6 @@ using UnityEngine.XR.ARFoundation;
 
 public class PlaneManager : MonoBehaviour
 {
-    public static bool GroundPlaneHitReceived { get; private set; }
     [SerializeField] PlaneFinderBehaviour planeFinder = null;
 
     [Header("Augmentation")]
@@ -18,9 +17,7 @@ public class PlaneManager : MonoBehaviour
     TouchHandler touchHandler;
     ProductPlacement productPlacement;
     AnchorBehaviour placementAnchor;
-    ARPlaneManager planeManager;
     PlaneAreaManager planeAreaManager;
-    int automaticHitTestFrameCount;
     static TrackableBehaviour.Status StatusCached = TrackableBehaviour.Status.NO_POSE;
     static TrackableBehaviour.StatusInfo StatusInfoCached = TrackableBehaviour.StatusInfo.UNKNOWN;
 
@@ -45,14 +42,6 @@ public class PlaneManager : MonoBehaviour
         }
     }
 
-    bool SurfaceIndicatorVisibilityConditionsMet
-    {
-        get
-        {
-            return TrackingStatusIsTrackedOrLimited && Input.touchCount == 0; // && GroundPlaneHitReceived
-        }
-    }
-
     Timer timer;
     bool timerFinished;
 
@@ -66,7 +55,6 @@ public class PlaneManager : MonoBehaviour
 
         this.productPlacement = FindObjectOfType<ProductPlacement>();
         this.touchHandler = FindObjectOfType<TouchHandler>();
-        this.planeManager = FindObjectOfType<ARPlaneManager>();
         this.planeAreaManager = GetComponent<PlaneAreaManager>();
 
         this.placementAnchor = this.placementAugmentation.GetComponentInParent<AnchorBehaviour>();
@@ -88,30 +76,12 @@ public class PlaneManager : MonoBehaviour
         }
     }
 
-    void LateUpdate()
-    {
-        // GroundPlaneHitReceived = (this.automaticHitTestFrameCount == Time.frameCount);
-
-        // SetSurfaceIndicatorVisible(SurfaceIndicatorVisibilityConditionsMet);
-    }
-
     void OnDestroy()
     {
         VuforiaARController.Instance.UnregisterVuforiaStartedCallback(OnVuforiaStarted);
         DeviceTrackerARController.Instance.UnregisterTrackerStartedCallback(OnTrackerStarted);
         DeviceTrackerARController.Instance.UnregisterDevicePoseStatusChangedCallback(OnDevicePoseStatusChanged);
     }
-
-    // public void HandleAutomaticHitTest(HitTestResult result)
-    // {
-    //     this.automaticHitTestFrameCount = Time.frameCount;
-
-    //     if (!productPlacement.IsPlaced)
-    //     {
-    //         this.productPlacement.DetachProductFromAnchor();
-    //         this.placementAugmentation.PositionAt(result.Position);
-    //     }
-    // }
 
     public void LoadPlacementAugmentation(GameObject product)
     {
@@ -172,9 +142,6 @@ public class PlaneManager : MonoBehaviour
     {
         Renderer[] renderers = this.planeFinder.PlaneIndicator.GetComponentsInChildren<Renderer>(true);
         Canvas[] canvas = this.planeFinder.PlaneIndicator.GetComponentsInChildren<Canvas>(true);
-
-        Transform transform = this.planeFinder.PlaneIndicator.GetComponent<Transform>();
-        Debug.Log("Point x coordinate: " + transform.position.x);
 
         foreach (Canvas c in canvas)
             c.enabled = isVisible;
