@@ -15,12 +15,9 @@ public class GroundPlaneUI : MonoBehaviour
     GraphicRaycaster graphicRayCaster;
     PointerEventData pointerEventData;
     EventSystem eventSystem;
-
     ProductPlacement productPlacement;
     TouchHandler touchHandler;
-
     PlaneAreaManager planeAreaManager;
-
     ARPlaneManager planeManager;
 
     void Start()
@@ -38,12 +35,12 @@ public class GroundPlaneUI : MonoBehaviour
 
     void LateUpdate()
     {
-        if (PlaneManager.TrackingStatusIsTrackedAndNormal)
+        this.instructions.transform.parent.gameObject.SetActive(true);
+        this.instructions.enabled = true;
+
+        if (PlaneManager.TrackingStatusIsTrackedAndNormal && planeManager.trackables.count > 0)
         {
             this.screenReticle.alpha = 0;
-
-            this.instructions.transform.parent.gameObject.SetActive(true);
-            this.instructions.enabled = true;
 
             if (this.productPlacement.IsPlaced)
             {
@@ -66,8 +63,8 @@ public class GroundPlaneUI : MonoBehaviour
         }
         else
         {
-            this.instructions.transform.parent.gameObject.SetActive(true);
-            this.instructions.enabled = true;
+            this.screenReticle.alpha = 1;
+
             this.instructions.text = "Point device towards ground.";
         }
     }
