@@ -1,32 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class PlaneAreaManager : MonoBehaviour
 {
-    void Update()
+    ARPlaneManager planeManager;
+    public double planeWidth { set; get; }
+    public double planeHeight { set; get; }
+
+    void Start()
     {
-        if (Input.touchCount > 0) 
-        { 
-            var touch = Input.GetTouch(0); 
+        this.planeManager = FindObjectOfType<ARPlaneManager>();
+    }
 
-            if (touch.phase == TouchPhase.Ended) 
-            { 
-                if (Input.touchCount == 1) 
-                {
-                    Ray raycast = Camera.main.ScreenPointToRay(touch.position);
+    void LateUpdate()
+    {
+        planeWidth = 0;
+        planeHeight = 0;
 
-                    if (Physics.Raycast(raycast, out RaycastHit raycastHit)) 
-                    {
-                        var planeAreaBehaviour = raycastHit.collider.gameObject.GetComponent<PlaneAreaBehaviour>(); 
-                        
-                        if (planeAreaBehaviour != null) 
-                        { 
-                            // planeAreaBehaviour.ToggleAreaView(); 
-                        }
-                    }
-                } 
-            } 
+        foreach (ARPlane plane in planeManager.trackables)
+        {
+            planeWidth += plane.size.x;
+            planeHeight += plane.size.y;
         }
     }
 }
