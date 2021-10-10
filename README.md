@@ -12,6 +12,6 @@ Master degree thesis @fmi
 - [x] Translate a 3D model in the AR scene
 - [x] Rotate a 3D model in the AR scene
 - [x] Scale a 3D model in the AR scene
-- [ ] Measure distances in the AR scene
-- [ ] Determine whether a 3D model will fit a placement in the AR scene
+- [x] Measure distances in the AR scene
+- [x] Determine whether a 3D model will fit a placement in the AR scene
 - [x] Occlude 3D models
