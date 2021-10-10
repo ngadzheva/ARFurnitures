@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using  UnityEngine.XR.ARSubsystems;
 
 public class PlaneAreaManager : MonoBehaviour
 {
@@ -21,8 +22,11 @@ public class PlaneAreaManager : MonoBehaviour
 
         foreach (ARPlane plane in planeManager.trackables)
         {
-            planeWidth += plane.size.x;
-            planeHeight += plane.size.y;
+            if (plane.alignment == PlaneAlignment.HorizontalUp)
+            { 
+                planeWidth += plane.size.x;
+                planeHeight += plane.size.y;
+            }
         }
     }
 }
