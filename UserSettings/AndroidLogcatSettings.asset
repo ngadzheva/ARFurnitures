@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "0B101JEC209450",
         "name": "com.DefaultCompany.ARFurnitures",
-        "processId": 24785,
+        "processId": 15374,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -277,6 +277,78 @@
             "name": "com.DefaultCompany.ARFurnitures",
             "processId": 24785,
             "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 25622,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 5354,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 6036,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 6748,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 7331,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 11659,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 12211,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 12794,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 13356,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 14156,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 14801,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 15374,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -329,7 +401,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "Object ",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

@@ -86,7 +86,7 @@ public class ProductPlacement : MonoBehaviour
     public void LoadProduct(GameObject productObject, string name)
     {
         this.product = productObject;
-        this.productShadow = GameObject.Find($"{name}Shadow");
+        // this.productShadow = GameObject.Find($"{name}Shadow");
         this.productName = name;
 
         SetupProduct();
@@ -120,7 +120,7 @@ public class ProductPlacement : MonoBehaviour
     void SetupProduct()
     {
         this.productRenderer = this.product.GetComponent<MeshRenderer>();
-        this.productShadowRenderer = this.productShadow.GetComponent<MeshRenderer>();
+        // this.productShadowRenderer = this.productShadow.GetComponent<MeshRenderer>();
 
         SetupMaterials();
         SetupFloor();
@@ -144,7 +144,7 @@ public class ProductPlacement : MonoBehaviour
             Resources.Load<Material>($"{this.productName}Frame")
         };
 
-        this.productShadowMaterial = Resources.Load<Material>($"{this.productName}Shadow");
+        // this.productShadowMaterial = Resources.Load<Material>($"{this.productName}Shadow");
     }
 
     void SetupFloor()
@@ -159,6 +159,6 @@ public class ProductPlacement : MonoBehaviour
 
     void SetVisible(bool visible)
     {
-        this.productRenderer.enabled = this.productShadowRenderer.enabled = visible;
+        this.productRenderer.enabled = visible; //this.productShadowRenderer.enabled = visible;
     }
 }

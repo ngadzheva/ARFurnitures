@@ -32,10 +32,10 @@ public class MenuManager : MonoBehaviour
 
     void Start()
     {
-        commonUI = FindObjectOfType<CommonUI>();
-        planeManager = FindObjectOfType<PlaneManager>();
-        productPlacement = FindObjectOfType<ProductPlacement>();
-        touchHandler = FindObjectOfType<TouchHandler>();
+        this.commonUI = FindObjectOfType<CommonUI>();
+        this.planeManager = FindObjectOfType<PlaneManager>();
+        this.productPlacement = FindObjectOfType<ProductPlacement>();
+        this.touchHandler = FindObjectOfType<TouchHandler>();
 
         GameObject buttonTemplate = transform.GetChild(0).gameObject;
         GameObject newItem;
@@ -56,16 +56,21 @@ public class MenuManager : MonoBehaviour
     }
 
     void ItemClicked(int itemIndex)
-    {
-        // productPlacement.GetProduct().SetActive(false);
-        
-        // GameObject product = GameObject.Find(allFurnitures[itemIndex].name);
-        // product.SetActive(true);
+    {      
+        productPlacement.GetProduct().SetActive(false);
 
-        // planeManager.LoadPlacementAugmentation(product);
-        // productPlacement.LoadProduct(product, allFurnitures[itemIndex].name);
-        // touchHandler.LoadAugmentationObject(product);
+        GameObject selectedProduct = GetSelecteditem(allFurnitures[itemIndex].name);
+        selectedProduct.SetActive(true);
+
+        planeManager.LoadPlacementAugmentation(selectedProduct);
+        productPlacement.LoadProduct(selectedProduct, selectedProduct.name);
+        touchHandler.LoadAugmentationObject(selectedProduct);
 
         commonUI.CloseFurnituresPopup();
+    }
+
+    GameObject GetSelecteditem(string name)
+    {
+        return GameObject.Find("Anchor_Placement").transform.Find(name).gameObject;
     }
 }
