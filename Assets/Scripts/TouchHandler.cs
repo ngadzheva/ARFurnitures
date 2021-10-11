@@ -90,8 +90,8 @@ public class TouchHandler : MonoBehaviour
             lastTouchCount == 0);
     }
 
-    public void LoadAugmentationObject(GameObject product)
+    public void LoadAugmentationObject(GameObject furniture)
     {
-        this.augmentationObject = product.transform;
+        this.augmentationObject = furniture.transform;
     }
 }

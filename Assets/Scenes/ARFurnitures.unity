@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 253572020}
   - component: {fileID: 253572021}
   m_Layer: 0
-  m_Name: GroundPlaneUI
+  m_Name: InstructionsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instructions: {fileID: 123777250}
   screenReticle: {fileID: 1550871683}
-  product: {fileID: 282285522}
+  furniture: {fileID: 282285522}
 --- !u!1001 &282285520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 324947249}
   - component: {fileID: 324947250}
   m_Layer: 0
-  m_Name: ProductPlacement
+  m_Name: FurniturePlacement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -996,12 +996,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c00ac6d2a6f458a83f40d7152fa688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  product: {fileID: 282285522}
-  productShadow: {fileID: 1182390040}
-  productName: Chair
+  furniture: {fileID: 282285522}
+  furnitureShadow: {fileID: 1182390040}
+  furnitureName: Chair
   translationIndicator: {fileID: 1069037701}
   rotationIndicator: {fileID: 957257382}
-  productSize: 0.65
+  furnitureSize: 0.65
 --- !u!4 &324947251
 Transform:
   m_ObjectHideFlags: 0
@@ -1243,7 +1243,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431041243}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1268,7 +1268,7 @@ GameObject:
   - component: {fileID: 448681264}
   - component: {fileID: 448681265}
   m_Layer: 0
-  m_Name: CommonUI
+  m_Name: ControlsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   furnituresPopup: {fileID: 431041243}
   addButton: {fileID: 1638521035}
-  groundPlaneUI: {fileID: 253572019}
+  instructionsUI: {fileID: 253572019}
 --- !u!1001 &510665019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2654,7 +2654,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   mDisplayAdvanced: 1
   mHitTestMode: 0
 --- !u!114 &1384845996

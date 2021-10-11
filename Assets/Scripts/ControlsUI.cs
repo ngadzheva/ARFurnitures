@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CommonUI : MonoBehaviour
+public class ControlsUI : MonoBehaviour
 {
     [SerializeField] GameObject furnituresPopup;
     [SerializeField] GameObject addButton;
-    [SerializeField] GameObject groundPlaneUI;
+    [SerializeField] GameObject instructionsUI;
     
     public void OpenFurnituresPopup()
     {
         furnituresPopup.SetActive(true);
         addButton.SetActive(false);
-        groundPlaneUI.SetActive(false);
+        instructionsUI.SetActive(false);
     }
 
     public void CloseFurnituresPopup()
     {
         furnituresPopup.SetActive(false);
         addButton.SetActive(true);
-        groundPlaneUI.SetActive(true);
+        instructionsUI.SetActive(true);
     }
 }

@@ -15,7 +15,7 @@ public class PlaneManager : MonoBehaviour
     PositionalDeviceTracker positionalDeviceTracker;
     ContentPositioningBehaviour contentPositioningBehaviour;
     TouchHandler touchHandler;
-    ProductPlacement productPlacement;
+    FurniturePlacement furniturePlacement;
     AnchorBehaviour placementAnchor;
     PlaneAreaManager planeAreaManager;
     static TrackableBehaviour.Status StatusCached = TrackableBehaviour.Status.NO_POSE;
@@ -53,7 +53,7 @@ public class PlaneManager : MonoBehaviour
 
         this.planeFinder.HitTestMode = HitTestMode.AUTOMATIC;
 
-        this.productPlacement = FindObjectOfType<ProductPlacement>();
+        this.furniturePlacement = FindObjectOfType<FurniturePlacement>();
         this.touchHandler = FindObjectOfType<TouchHandler>();
         this.planeAreaManager = GetComponent<PlaneAreaManager>();
 
@@ -83,9 +83,9 @@ public class PlaneManager : MonoBehaviour
         DeviceTrackerARController.Instance.UnregisterDevicePoseStatusChangedCallback(OnDevicePoseStatusChanged);
     }
 
-    public void LoadPlacementAugmentation(GameObject product)
+    public void LoadPlacementAugmentation(GameObject furniture)
     {
-        this.placementAugmentation = product;
+        this.placementAugmentation = furniture;
     }
     
     public void HandleInteractiveHitTest(HitTestResult result)
@@ -98,33 +98,33 @@ public class PlaneManager : MonoBehaviour
         this.contentPositioningBehaviour = this.planeFinder.GetComponent<ContentPositioningBehaviour>();
         this.contentPositioningBehaviour.DuplicateStage = false;
 
-        Vector3 productSize = this.placementAugmentation.GetComponent<MeshCollider>().bounds.size;
-        bool productBiggerThanPlane = productSize.x > planeAreaManager.planeWidth || productSize.y > planeAreaManager.planeHeight;
+        Vector3 furnitureSize = this.placementAugmentation.GetComponent<MeshCollider>().bounds.size;
+        bool furnitureBiggerThanPlane = furnitureSize.x > planeAreaManager.planeWidth || furnitureSize.y > planeAreaManager.planeHeight;
 
-        if (TrackingStatusIsTrackedAndNormal && !productBiggerThanPlane)
+        if (TrackingStatusIsTrackedAndNormal && !furnitureBiggerThanPlane)
         {
             this.contentPositioningBehaviour.AnchorStage = this.placementAnchor;
             this.contentPositioningBehaviour.PositionContentAtPlaneAnchor(result);
             UtilityHelper.EnableRendererColliderCanvas(placementAugmentation, true);
             
-            if (!this.productPlacement.IsPlaced)
+            if (!this.furniturePlacement.IsPlaced)
             {
-                this.productPlacement.PlaceProductAtAnchorFacingCamera(this.placementAnchor.transform);
+                this.furniturePlacement.PlaceFurnitureAtAnchorFacingCamera(this.placementAnchor.transform);
                 this.touchHandler.enableRotation = true;
             }
             else
             {
-                this.productPlacement.PlaceProductAtAnchor(this.placementAnchor.transform);
+                this.furniturePlacement.PlaceFurnitureAtAnchor(this.placementAnchor.transform);
             }
         }
     }
 
     public void ResetScene()
     {
-        this.productPlacement.Reset();
+        this.furniturePlacement.Reset();
         UtilityHelper.EnableRendererColliderCanvas(this.placementAugmentation, false);
 
-        this.productPlacement.DetachProductFromAnchor();
+        this.furniturePlacement.DetachFurnitureFromAnchor();
         this.touchHandler.enableRotation = false;
     }
 

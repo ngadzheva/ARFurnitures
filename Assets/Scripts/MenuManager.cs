@@ -25,16 +25,16 @@ public class MenuManager : MonoBehaviour
     }
 
     [SerializeField] Furniture[] allFurnitures;
-    private CommonUI commonUI;
+    private ControlsUI controlsUI;
     private PlaneManager planeManager;
-    private ProductPlacement productPlacement;
+    private FurniturePlacement furniturePlacement;
     private TouchHandler touchHandler;
 
     void Start()
     {
-        this.commonUI = FindObjectOfType<CommonUI>();
+        this.controlsUI = FindObjectOfType<ControlsUI>();
         this.planeManager = FindObjectOfType<PlaneManager>();
-        this.productPlacement = FindObjectOfType<ProductPlacement>();
+        this.furniturePlacement = FindObjectOfType<FurniturePlacement>();
         this.touchHandler = FindObjectOfType<TouchHandler>();
 
         GameObject buttonTemplate = transform.GetChild(0).gameObject;
@@ -57,16 +57,16 @@ public class MenuManager : MonoBehaviour
 
     void ItemClicked(int itemIndex)
     {      
-        productPlacement.GetProduct().SetActive(false);
+        furniturePlacement.GetFurniture().SetActive(false);
 
-        GameObject selectedProduct = GetSelecteditem(allFurnitures[itemIndex].name);
-        selectedProduct.SetActive(true);
+        GameObject selectedFurniture = GetSelecteditem(allFurnitures[itemIndex].name);
+        selectedFurniture.SetActive(true);
 
-        planeManager.LoadPlacementAugmentation(selectedProduct);
-        productPlacement.LoadProduct(selectedProduct, selectedProduct.name);
-        touchHandler.LoadAugmentationObject(selectedProduct);
+        planeManager.LoadPlacementAugmentation(selectedFurniture);
+        furniturePlacement.LoadFurniture(selectedFurniture, selectedFurniture.name);
+        touchHandler.LoadAugmentationObject(selectedFurniture);
 
-        commonUI.CloseFurnituresPopup();
+        controlsUI.CloseFurnituresPopup();
     }
 
     GameObject GetSelecteditem(string name)

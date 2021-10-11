@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "0B101JEC209450",
         "name": "com.DefaultCompany.ARFurnitures",
-        "processId": 15374,
+        "processId": 23660,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -349,6 +349,42 @@
             "name": "com.DefaultCompany.ARFurnitures",
             "processId": 15374,
             "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 16242,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 20774,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 21458,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 22121,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 23044,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 23660,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -401,7 +437,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "Object ",
+    "m_Filter": "Close",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

@@ -6,16 +6,16 @@ using UnityEngine.EventSystems;
 using UnityEngine.XR.ARFoundation;
 using Vuforia;
 
-public class GroundPlaneUI : MonoBehaviour
+public class InstructionsUI : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] Text instructions = null;
     [SerializeField] CanvasGroup screenReticle = null;
-    [SerializeField] GameObject product = null;
+    [SerializeField] GameObject furniture = null;
     GraphicRaycaster graphicRayCaster;
     PointerEventData pointerEventData;
     EventSystem eventSystem;
-    ProductPlacement productPlacement;
+    FurniturePlacement furniturePlacement;
     TouchHandler touchHandler;
     PlaneAreaManager planeAreaManager;
     ARPlaneManager planeManager;
@@ -23,7 +23,7 @@ public class GroundPlaneUI : MonoBehaviour
     void Start()
     {
         
-        this.productPlacement = FindObjectOfType<ProductPlacement>();
+        this.furniturePlacement = FindObjectOfType<FurniturePlacement>();
         this.touchHandler = FindObjectOfType<TouchHandler>();
         this.graphicRayCaster = FindObjectOfType<GraphicRaycaster>();
         this.eventSystem = FindObjectOfType<EventSystem>();
@@ -42,23 +42,23 @@ public class GroundPlaneUI : MonoBehaviour
         {
             this.screenReticle.alpha = 0;
 
-            if (this.productPlacement.IsPlaced)
+            if (this.furniturePlacement.IsPlaced)
             {
-                Vector3 productSize = this.product.GetComponent<MeshCollider>().bounds.size;
+                Vector3 furnitureSize = this.furniture.GetComponent<MeshCollider>().bounds.size;
 
-                if (productSize.x > planeAreaManager.planeWidth || productSize.y > planeAreaManager.planeHeight)
+                if (furnitureSize.x > planeAreaManager.planeWidth || furnitureSize.y > planeAreaManager.planeHeight)
                 {
-                    this.instructions.text = "There is not enough space for the product";
+                    this.instructions.text = "There is not enough space for the furniture";
                 }
                 else
                 {
-                    this.instructions.text = "Touch and drag to move the product.\nTwo fingers to rotate" +
+                    this.instructions.text = "Touch and drag to move the furniture.\nTwo fingers to rotate" +
                     ((this.touchHandler.enablePinchScaling) ? " or pinch to scale." : ".");
                 }
             }
             else
             {
-                this.instructions.text = "Tap to place the product.";
+                this.instructions.text = "Tap to place the furniture.";
             }
         }
         else
