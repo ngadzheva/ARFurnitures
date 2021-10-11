@@ -46,9 +46,9 @@ public class InstructionsUI : MonoBehaviour
             {
                 Vector3 furnitureSize = this.furniture.GetComponent<MeshCollider>().bounds.size;
 
-                if (furnitureSize.x > planeAreaManager.planeWidth || furnitureSize.y > planeAreaManager.planeHeight)
+                if (planeAreaManager.enableMeasurement && (furnitureSize.x > planeAreaManager.planeWidth || furnitureSize.y > planeAreaManager.planeHeight))
                 {
-                    this.instructions.text = "There is not enough space for the furniture";
+                    this.instructions.text = "There is not enough space for the furniture.";
                 }
                 else
                 {

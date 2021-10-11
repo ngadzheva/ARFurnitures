@@ -9,6 +9,7 @@ public class PlaneAreaManager : MonoBehaviour
     ARPlaneManager planeManager;
     public double planeWidth { set; get; }
     public double planeHeight { set; get; }
+    public bool enableMeasurement;
 
     void Start()
     {
@@ -20,12 +21,15 @@ public class PlaneAreaManager : MonoBehaviour
         planeWidth = 0;
         planeHeight = 0;
 
-        foreach (ARPlane plane in planeManager.trackables)
+        if (enableMeasurement)
         {
-            if (plane.alignment == PlaneAlignment.HorizontalUp)
-            { 
-                planeWidth += plane.size.x;
-                planeHeight += plane.size.y;
+            foreach (ARPlane plane in planeManager.trackables)
+            {
+                if (plane.alignment == PlaneAlignment.HorizontalUp)
+                { 
+                    planeWidth += plane.size.x;
+                    planeHeight += plane.size.y;
+                }
             }
         }
     }

@@ -100,8 +100,9 @@ public class PlaneManager : MonoBehaviour
 
         Vector3 furnitureSize = this.placementAugmentation.GetComponent<MeshCollider>().bounds.size;
         bool furnitureBiggerThanPlane = furnitureSize.x > planeAreaManager.planeWidth || furnitureSize.y > planeAreaManager.planeHeight;
+        bool canPlaceFurniture = planeAreaManager.enableMeasurement ? !furnitureBiggerThanPlane : true;
 
-        if (TrackingStatusIsTrackedAndNormal && !furnitureBiggerThanPlane)
+        if (TrackingStatusIsTrackedAndNormal && canPlaceFurniture)
         {
             this.contentPositioningBehaviour.AnchorStage = this.placementAnchor;
             this.contentPositioningBehaviour.PositionContentAtPlaneAnchor(result);

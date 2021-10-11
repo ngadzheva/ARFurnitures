@@ -5,21 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class ControlsUI : MonoBehaviour
 {
-    [SerializeField] GameObject furnituresPopup;
-    [SerializeField] GameObject addButton;
+    [SerializeField] GameObject buttons;
     [SerializeField] GameObject instructionsUI;
     
-    public void OpenFurnituresPopup()
+    public void OpenPopup(string popupType)
     {
-        furnituresPopup.SetActive(true);
-        addButton.SetActive(false);
+        GameObject popup = transform.Find(popupType).gameObject;
+
+        popup.SetActive(true);
+        buttons.SetActive(false);
         instructionsUI.SetActive(false);
     }
 
-    public void CloseFurnituresPopup()
+    public void ClosePopup(string popupType)
     {
-        furnituresPopup.SetActive(false);
-        addButton.SetActive(true);
+        GameObject popup = transform.Find(popupType).gameObject;
+        
+        popup.SetActive(false);
+        buttons.SetActive(true);
         instructionsUI.SetActive(true);
     }
 }

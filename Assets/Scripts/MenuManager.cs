@@ -67,7 +67,7 @@ public class MenuManager : MonoBehaviour
         furniturePlacement.LoadFurniture(selectedFurniture, selectedFurniture.name);
         touchHandler.LoadAugmentationObject(selectedFurniture);
 
-        controlsUI.CloseFurnituresPopup();
+        controlsUI.ClosePopup("FurnituresPopup");
     }
 
     GameObject GetSelecteditem(string name)
