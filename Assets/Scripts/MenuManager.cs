@@ -58,6 +58,7 @@ public class MenuManager : MonoBehaviour
     void ItemClicked(int itemIndex)
     {      
         furniturePlacement.GetFurniture().SetActive(false);
+        furniturePlacement.DetachFurnitureFromAnchor();
 
         GameObject selectedFurniture = GetSelecteditem(allFurnitures[itemIndex].name);
         selectedFurniture.SetActive(true);
