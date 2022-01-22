@@ -11,8 +11,8 @@ Master degree thesis @fmi
 ## Installation
 1. Open the project in Unity (needed version: 2020.3.13f1)
 2. Add Vuforia plugin (needed version: 9.8)
-3. Add ARFoundation plugin (needed version: 4.7)
-4. Add ARCore XR plugin (needed version: 4.7)
+3. Add ARFoundation plugin (needed version: 4.1.7)
+4. Add ARCore XR plugin (needed version: 4.1.7)
 5. From the Project window go to Assets > Scenes and load the ARFurnitures scene
 6. Go to File > Build & Run
 7. Drag and drop the ARFurnitres scene in the Scenes In Build window
