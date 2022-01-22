@@ -86,7 +86,6 @@ public class FurniturePlacement : MonoBehaviour
     public void LoadFurniture(GameObject furnitureObject, string name)
     {
         this.furniture = furnitureObject;
-        // this.furnitureShadow = GameObject.Find($"{name}Shadow");
         this.furnitureName = name;
 
         SetupFurniture();
@@ -120,11 +119,9 @@ public class FurniturePlacement : MonoBehaviour
     void SetupFurniture()
     {
         this.furnitureRenderer = this.furniture.GetComponent<MeshRenderer>();
-        // this.furnitureShadowRenderer = this.furnitureShadow.GetComponent<MeshRenderer>();
 
         SetupMaterials();
         SetupFloor();
-
 
         this.augmentationScale = this.furnitureSize;
 
@@ -143,8 +140,6 @@ public class FurniturePlacement : MonoBehaviour
             Resources.Load<Material>($"{this.furnitureName}Body"),
             Resources.Load<Material>($"{this.furnitureName}Frame")
         };
-
-        // this.furnitureShadowMaterial = Resources.Load<Material>($"{this.furnitureName}Shadow");
     }
 
     void SetupFloor()
@@ -159,6 +154,6 @@ public class FurniturePlacement : MonoBehaviour
 
     void SetVisible(bool visible)
     {
-        this.furnitureRenderer.enabled = visible; //this.furnitureShadowRenderer.enabled = visible;
+        this.furnitureRenderer.enabled = visible;
     }
 }

@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
+    public Toggle scaleToggle;
+
+    void Start()
+    {
+        scaleToggle.isOn = false;
+    }
+
     public void ToggleOcclusion(bool toggle)
     {
         AROcclusionManager occlusionManager = Camera.main.GetComponent<AROcclusionManager>();

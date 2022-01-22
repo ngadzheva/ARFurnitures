@@ -139,18 +139,6 @@ public class PlaneManager : MonoBehaviour
         this.smartTerrain.Start();
     }
 
-    void SetSurfaceIndicatorVisible(bool isVisible)
-    {
-        Renderer[] renderers = this.planeFinder.PlaneIndicator.GetComponentsInChildren<Renderer>(true);
-        Canvas[] canvas = this.planeFinder.PlaneIndicator.GetComponentsInChildren<Canvas>(true);
-
-        foreach (Canvas c in canvas)
-            c.enabled = isVisible;
-
-        foreach (Renderer renderer in renderers)
-            renderer.enabled = isVisible;
-    }
-
     void TimerFinished(System.Object source, ElapsedEventArgs e)
     {
         this.timerFinished = true;

@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "0B101JEC209450",
         "name": "com.DefaultCompany.ARFurnitures",
-        "processId": 23660,
+        "processId": 19889,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -385,6 +385,60 @@
             "name": "com.DefaultCompany.ARFurnitures",
             "processId": 23660,
             "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 16624,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 26924,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 27928,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 28835,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 29697,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 30525,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 31338,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 19279,
+            "exited": false
+        },
+        {
+            "deviceId": "0B101JEC209450",
+            "name": "com.DefaultCompany.ARFurnitures",
+            "processId": 19889,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -437,7 +491,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "Close",
+    "m_Filter": "",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }
